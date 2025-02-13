@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CreateBook from "./component/CreateBook";
 import ListBook from "./component/ListBook";
-// import "./styles.css"; // Ensure you have a CSS file for styling
 
 export default function App() {
   const [books, setBooks] = useState([]);
   const API_URL = "http://localhost:3001/books";
 
-  // Fetch books on component mount
+
   useEffect(() => {
     const fetchBooks = async () => {
       try {
@@ -23,8 +22,6 @@ export default function App() {
 
     fetchBooks();
   }, []);
-
-  // Create a book
   const createBook = async (title) => {
     if (!title.trim()) return;
     try {
@@ -35,7 +32,7 @@ export default function App() {
     }
   };
 
-  // Delete a book
+
   const deleteBook = async (id) => {
     try {
       await axios.delete(`${API_URL}/${id}`);
@@ -45,7 +42,7 @@ export default function App() {
     }
   };
 
-  // Edit a book
+ 
   const editBook = async (id, newTitle) => {
     if (!newTitle.trim()) return;
     try {
