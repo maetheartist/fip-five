@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function BookCreate({ onCreate }) {
+export default function CreateBook({ onCreate }) {
   const [title, SetTitle] = React.useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
