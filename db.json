@@ -1,20 +1,16 @@
 {
-    "books": [
-      {
-        "title": "book one",
-        "id": 1
-      },
-      {
-        "title": "book two",
-        "id": 2
-      },
-      {
-        "title": "book three",
-        "id": 3
-      },
-      {
-        "title": "book four",
-        "id": 4
-      }
-    ]
-  }
+  "books": [
+    {
+      "id": "1",
+      "title": "JavaScript Basics"
+    },
+    {
+      "id": "2",
+      "title": "React for Beginners"
+    },
+    {
+      "id": "b1ea",
+      "title": "hello"
+    }
+  ]
+}
